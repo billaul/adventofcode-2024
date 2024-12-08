@@ -17,7 +17,7 @@ class Vector
     return if col < 0 || row < 0 || $antinodes.dig(col,row).nil?
     $antinodes[col][row] = "#"
 
-    Vector.new(v_col, v_row).apply(col, row)
+    Vector.new(v_col, v_row).apply(col, row) # Etape 2
   end
 end
 
